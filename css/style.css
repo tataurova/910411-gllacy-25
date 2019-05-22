@@ -1,0 +1,206 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 700;
+  color: #FFFFFF;
+  background-color: #849D8F;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  font: inherit;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  color: #FEFEFE;
+  vertical-align: middle;
+  background-image: linear-gradient(to bottom, #E74A35, #F16541);
+}
+
+.button:hover,
+.button:focus {
+  background-image: linear-gradient(to bottom, #E74A35, #F26843);
+}
+
+.button:active {
+  background-image: linear-gradient(to bottom, #F26843, #E74A35);
+  }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: -1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.main-navigation {
+  line-height: 18px;
+  background-color: #849D8F;
+}
+
+.site-tools {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.site-navigation,
+.user-navigation,
+.footer-social ul,
+.footer-links ul,
+.catalog-item,
+.features-list,
+.breadcrumbs {
+  list-style: none;
+}
+
+.site-navigation a,
+.user-navigation a,
+.site-tools a,
+.main-footer a,
+.breadcrumbs a,
+.catalog-item a {
+  color: #FFFFFF;
+}
+
+.site-navigation a,
+.breadcrumbs a,
+.catalog-item a,
+.footer-links a,
+.copyright-link {
+  border-bottom: 1px solid #9FB4A8;
+  }
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  background-color: #D07058;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus,
+.footer-links a:hover,
+.footer-links a:focus, {
+  color: #FFBC9E;
+}
+
+.catalog-more,
+.login-form,
+.search-form
+.modal {
+  display: none;
+}
+
+.basket-products {
+  color: #323232;
+  font-weight: 500;
+  background-color: #F7F7F3;
+}
+
+.basket-no-products {
+  font-weight: 400;
+}
+
+.basket-list h3,
+.basket-list b {
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.price-for-kilogram {
+  color: #999999;
+}
+
+.container h1 {
+  font-size: 35px;
+}
+
+.catalog-item-title {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.catalog-item-price {
+  font-size: 45px;
+}
+
+.per-kilogram {
+  font-size: 30px;
+}
+
+.features {
+  color: #323232;
+  background-color: #EFE5CC;
+  background-image: url("../img/waffle-big.png");
+}
+
+.features-list,
+.breadcrumbs {
+  font-weight: 400;
+}
+
+p.features {
+  font-size: 24;
+  line-height: 30px;
+}
+
+.blog {
+  color: #323232;
+  list-style: none;
+  text-align: left;
+  background-color: #FFFFFF;
+  background-image: url("../img/strawberry-background.png");
+}
+
+.blog a {
+  color: #323232;
+}
+
+.blog h2 {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.blog h3 {
+  font-size: 24px;
+  line-height: 30px;
+  text-decoration: underline;
+}
+
+.subscribing {
+  font-weight: 400;
+  color: #5A5A5A;
+  background-color:#F8F7F4;
+}
+
+.subscribing input[type="email"] {
+  font: inherit;
+  color: #999999;
+  background-color: #CEE0C0;
+}
+
+.footer-links {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.footer-links li:first-child {
+  font-weight: 700;
+}
+
+.footer-copyright {
+  font-size: 12px;
+  line-height: 16px;
+}
