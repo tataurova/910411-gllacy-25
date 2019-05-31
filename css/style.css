@@ -479,7 +479,6 @@ label {
 }
 
 .subscribing {
-  margin-bottom: 468px; /* временно */
   width: 560px;
   padding: 20px;
   font-weight: 400;
@@ -510,6 +509,7 @@ label {
 
 .main-footer {
   min-height: 103px;
+  margin-top: 468px; /* временно */
 }
 
 .main-footer .container {
