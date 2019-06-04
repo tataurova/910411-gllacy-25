@@ -7,7 +7,7 @@
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
-<body>
+<body class="inner-page">
 <header class="main-header">
   <nav class="main-navigation container">
     <div class="main-navigation-wrapper">
@@ -28,19 +28,43 @@
         </ul>
       </div>
       <div class="site-tools">
-        <span class="site-search"></span>
-        <ul class="user-navigation">
+        <div class="search">
+          <button type="submit" class="site-search" aria-label="Поиск"></button>
+          <form class="search-form" action="https://htmlacademy.ru" method="post">
+            <p>
+              <label class="visually-hidden" for="field-search">Поиск по сайту</label>
+              <input class="field-search" id="field-search" type="search" name="field-search" placeholder="Что ищем?">
+            </p>
+          </form>
+        </div>
+         <ul class="user-navigation">
           <li>
             <a class="login-link" href=#>Вход</a>
+            <form class="login-form" action="https://htmlacademy.ru" method="post">
+              <p>
+                <label class="visually-hidden" for="user-login">Логин</label>
+                <input class="login-user" id="user-login" type="email" name="login" placeholder="Электронная почта">
+              </p>
+              <p>
+                <label class="visually-hidden" for="user-password">Пароль</label>
+                <input class="login-password" id="user-password" type="password" name="password" placeholder="Пароль">
+              </p>
+              <button class="button login-button" type="submit">Войти</button>
+              <p class="login-password-info">
+                <a class="restore-password" href=#>Забыли пароль?</a>
+                <a class="new-registration" href=#>Новая регистрация</a>
+              </p>
+            </form>
           </li>
         </ul>
-        <a class="basket-link added-products" href=# aria-label="Корзина">
+        <div class="basket-wrapper">
+        <a class="basket-link added-products" href="#" aria-label="Корзина">
           2 товара
         </a>
-        <!--
+          <div class="basket-modal">
         <ul class="basket-list">
           <li>
-            <button class="button" type="submit">Удалить</button>
+            <button class="button-delete" type="submit" aria-label="Удалить"></button>
             <a href="catalog-item-1.html">
               <h3>
                 <span class="basket-item">Пломбир с апельсиновым джемом</span>
@@ -55,7 +79,7 @@
             </p>
           </li>
           <li>
-            <button class="button" type="submit">Удалить</button>
+            <button class="button-delete" type="submit" aria-label="Удалить"></button>
             <a href="catalog-item-3.html">
               <h3>
                 <span class="basket-item">Клубничный пломбир с присыпкой  из белого шоколада</span>
@@ -73,7 +97,8 @@
         </ul>
         <b class="basket-total-price">Итого: 750 руб.</b>
         <button class="button button-create-order" type="submit">Оформить заказ</button>
-        -->
+          </div>
+        </div>
       </div>
     </div>
     <div class="contact-wrapper">
@@ -154,7 +179,6 @@
       <li class="catalog-item">
         <p class="catalog-item-image">
           <img src="img/product-5.jpg" width="267" height="267" alt="Сливочное с брусничным джемом">
-        </p>
         <h3>
           <a href="catalog-item-5.html">
             <span class="catalog-item-title">Сливочное с брусничным джемом </span>

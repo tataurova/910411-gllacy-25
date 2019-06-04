@@ -9,7 +9,11 @@
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
-<body class="inner-page">
+<body>
+  <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+  <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+  <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+  <div class="site-wrapper">
 <header class="main-header">
   <nav class="main-navigation container">
     <div class="main-navigation-wrapper">
@@ -21,19 +25,19 @@
             <a href="catalog.html">Каталог</a>
             <ul class="catalog-more">
               <li>
-                <a class="catalog-item-new" href=#>Новинки</a>
+                <a class="catalog-more-item" href=#>Новинки</a>
               </li>
               <li>
-                <a class="catalog-item" href=#>Сливочное</a>
+                <a class="catalog-more-item" href=#>Сливочное</a>
               </li>
               <li>
-                <a class="catalog-item-current" href=#>Щербеты</a>
+                <a class="catalog-more-item" href=#>Щербеты</a>
               </li>
               <li>
-                <a class="catalog-item" href=#>Фруктовый лед</a>
+                <a class="catalog-more-item" href=#>Фруктовый лед</a>
               </li>
               <li>
-                <a class="catalog-item" href=#>Мелорин</a>
+                <a class="catalog-more-item" href=#>Мелорин</a>
               </li>
             </ul>
           </li>
@@ -41,18 +45,20 @@
             <a href="ship-pay.html">Доставка и оплата</a>
           </li>
           <li>
-            <a href="about-company.html">О компании</a>
+            <a href="about-company.html">О Компании</a>
           </li>
         </ul>
       </div>
       <div class="site-tools">
-        <button type="submit" class="site-search" aria-label="Поиск"></button>
-        <form class="search-form" action="https://htmlacademy.ru" method="post">
-          <p>
-            <label class="visually-hidden" for="field-search">Поиск по сайту</label>
-            <input class="field-search" id="field-search" type="search" name="field-search" placeholder="Что ищем?">
-          </p>
-        </form>
+        <div class="search">
+          <button type="submit" class="site-search" aria-label="Поиск"></button>
+          <form class="search-form" action="https://htmlacademy.ru" method="post">
+            <p>
+              <label class="visually-hidden" for="field-search">Поиск по сайту</label>
+              <input class="field-search" id="field-search" type="search" name="field-search" placeholder="Что ищем?">
+            </p>
+          </form>
+        </div>
         <ul class="user-navigation">
           <li>
             <a class="login-link" href=#>Вход</a>
@@ -65,7 +71,7 @@
                 <label class="visually-hidden" for="user-password">Пароль</label>
                 <input class="login-password" id="user-password" type="password" name="password" placeholder="Пароль">
               </p>
-              <button class="button" type="submit">Войти</button>
+              <button class="button login-button" type="submit">Войти</button>
               <p class="login-password-info">
                 <a class="restore-password" href=#>Забыли пароль?</a>
                 <a class="new-registration" href=#>Новая регистрация</a>
@@ -84,10 +90,47 @@
     </div>
   </nav>
 </header>
-<main class="container">
+<div class="container">
   <h1 class="visually-hidden">Магазин мороженого Gllasy</h1>
-
-  <!-- здесь будет графика -->
+  <section class="slider">
+          <div class="slider-controls">
+            <label for="product-1">Первый</label>
+            <label for="product-2">Второй</label>
+            <label for="product-3">Третий</label>
+          </div>
+          <ul class="slider-list">
+            <li class="slider-item slide" id="slide1">
+              <h3 class="slide-title">
+                Крем-брюле и пломбир с малиновым джемом
+              </h3>
+              <a class="button slide-button" href="#">Давайте оба!</a>
+            </li>
+            <li class="slider-item slide" id="slide2">
+              <h3 class="slide-title">
+                Шоколадный пломбир и лимонный сорбет
+              </h3>
+              <a class="button slide-button" href="#">Давайте оба!</a>
+            </li>
+            <li class="slider-item slide" id="slide3">
+              <h3 class="slide-title">
+                Пломбир с помадкой и клубничный щербет
+              </h3>
+              <a class="button slide-button" href="#">Давайте оба!</a>
+            </li>
+          </ul>
+        </section>
+    <div class="index-columns">
+  <article class="advertisement-one">
+    <h2>Малинка даром!</h2>
+    <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+    <a class="button" href="#">Хочу варенье!</a>
+  </article>
+    <article class="advertisement-two">
+    <h2>Шоколадки даром!</h2>
+    <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+    <a class="button" href="#">Хочу шоколадки!</a>
+  </article>
+    </div>
   <div class="index-columns">
     <section class="features">
       <p>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</p>
@@ -97,13 +140,13 @@
           использованием современного оборудования и
           проверенных временем технологий. 
         </li>
-        <li>Для приготовления мороженого используются настоящие сливки и молоко высочайшего
-          качества. Все дополнительные
-          ингредиенты и добавки произведены из натурального, экологически чистого сырья.
-        </li>
         <li>Закупка ингредиентов производится только у проверенных фермерских хозяйств и
           компаний, с которыми нас
           связывает долговременное сотрудничество. 
+        </li>
+        <li>Для приготовления мороженого используются настоящие сливки и молоко высочайшего
+          качества. Все дополнительные
+          ингредиенты и добавки произведены из натурального, экологически чистого сырья.
         </li>
         <li>Доставка нашего мороженого до заказчиков осуществляется в специальном
           термопаке, который не дает мороженому
@@ -154,6 +197,28 @@
       <button class="button-close" type="button">Закрыть</button>
     </form>
   </section>
+  <section class="map-info">
+    <h2 class="visually-hidden">Как до нас добраться</h2>
+    <p>
+      <img src="img/map.jpg" width="1200" height="430" alt="Адрес главного офиса по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+    </p>
+  </section>
+  <section class="contacts">
+    <h2 class="visually-hidden">Контактная информация</h2>
+    <p class="address-info">
+      Адрес главного офиса <br>
+      и офлайн-магазина:
+    </p>
+    <p class="address">
+      ул. Большая Конюшенная<br>
+      19/8, Санкт-Петербург
+    </p>
+    <p class="contact-info">Для заказов по телефону:</p>
+    <p class="contacts-number">8 812 450-25-25</p>
+    <p class="work-time-info">(с 10 до 20 ежедневно)</p>
+    <a class="button" href="#">Форма обратной связи</a>
+  </section>
+  </div>
 </main>
 <footer class="main-footer">
   <div class="container">
@@ -294,5 +359,6 @@
     </p>
   </div>
 </footer>
+      </div>
 </body>
 </html>
