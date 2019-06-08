@@ -8,7 +8,7 @@ body {
   color: #FFFFFF;
 }
 
-/* временно для визуализации
+/*временно для визуализации
 body > * { background: rgba(255, 0, 0, 0.3); } body > * > * { background: rgba(255, 255, 0, 0.3); }
 body > * > * > * { background: rgba(0, 0, 255, 0.3); } body > * > * > * > *
 { background: rgba(0, 255, 255, 0.3); }*/
@@ -274,23 +274,33 @@ site-wrapper::after {
   height: 32px;
   padding: 0;
   position: relative;
-  border: 1px solid #A2B6AA;
   border-radius: 50%;
-  background-color: #A2B6AA;
-  background-image: url("../img/loupe.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+  background-color: #9FB3A8;
+  border: 1px solid #9FB3A8;
+  /*background-image: url("../img/loupe.svg");*/
+}
+
+.site-search:hover,
+.site-search:focus {
+  background-color: #A0B3A8;
+  border: 1px solid #A0B3A8;
+}
+
+.site-search:hover path,
+.site-search:focus path {
+  fill: #323232;
 }
 
 .search-form {
-  width: 341px;
-  height: 84px;
+  width: 330px;
+  height: 87px;
   padding: 0;
   padding-left: 14px;
   border-radius: 5px;
   background-color: #F8F7F4;
   position: absolute;
   display: none;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.40);
 }
 
 .search-form input,textarea {
@@ -309,7 +319,7 @@ input[type="search"]::placeholder {
 }
 
 .login-form {
-  padding: 0;
+  padding: 20px;
   width: 277px;
   height: 215px;
   border-radius: 5px;
@@ -320,6 +330,7 @@ input[type="search"]::placeholder {
   flex-wrap: wrap;
   justify-content: space-around;
   display: none;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.40);
 
 }
 
@@ -441,13 +452,31 @@ label {
 .basket-modal {
   width: 538px;
   height: 242px;
+  padding: 20px;
   border-radius: 5px;
   background-color: #F8F7F4;
+  color: #323232;
   position: absolute;
   right: 50px;
+  display: flex;
   flex-direction: column;
-  display: none;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.40);
 
+}
+
+.basket-modal img {
+  border-radius: 50%;
+  margin-right: 13px;
+}
+
+.basket-list {
+  padding: 0;
+  margin: 0;
+}
+
+.basket-list h3 {
+  width: 245px;
+  order: 1;
 }
 
 .basket-wrapper:hover .basket-modal {
@@ -456,8 +485,7 @@ label {
 
 .basket-list li {
   display: flex;
-  flex-display: row;
-  flex-wrap: no-wrap;
+  align-items: center;
 }
 
 .basket-list h3,
@@ -467,41 +495,49 @@ label {
 }
 
 .basket-list a,
-.basket-list span,
 .basket-list b {
   position: relative;
   font-size: 13px;
   font-weight: 400;
   line-height: 16px;
   color: #323232;
+  display: block;
 }
 
 .basket-list a {
   display: flex;
-  flex-display: row;
-  justify-content: center;
 }
 
 .basket-list p {
-  order: 0;
+  margin: 0;
+  padding: 0;
 }
 
-.basket-list h3 {
-  order: 1;
+.basket-item-price {
+  width: 123px;
+  line-height: 16px;
+}
+
+.basket-total-price {
+  color: #323232;
+  align-self: flex-end;
 }
 
 .button-delete {
   width: 11px;
   height: 11px;
-  position: absolute;
   background-image: url("../img/delete.svg");
-  color: #353132;
   background-repeat: no-repeat;
   background-position: center;
+  border: none;
+  padding: 0;
+  margin-right: 9px;
 }
 
 .price-for-kilogram {
+  font-size: 13px;
   color: #999999;
+  margin-left: 4px;
 }
 
 .work-time {
@@ -533,7 +569,6 @@ label {
 }
 
 .catalog-item-price {
-  position: relative;
   font-size: 45px;
 }
 
@@ -693,13 +728,20 @@ label {
   width: 267px;
   margin-bottom: 40px;
   margin-right: 26px;
+  text-align: center;
+}
+
+.catalog-item:hover {
+  background-color: #92A499;
+  border-radius: 3px;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.40);
 }
 
 .catalog-item:nth-child(4n) {
   margin-right: 0;
 }
 
-.catalog-item-image {
+.catalog-item-image img {
   border-radius: 50%;
 }
 
@@ -718,6 +760,7 @@ label {
   background-color: #F8F7F4;
   border-radius: 5px;
   display: none;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.40);
 }
 
 .catalog-more a {
@@ -815,10 +858,22 @@ label {
  position: relative;
 }
 
+.pin {
+ position: absolute;
+ top: 138px;
+ left: 265px;
+ width: 80px;
+ height: 140px;
+ font-size: 0;
+ background-image: url("../img/marker.svg");
+}
+
 .contacts {
   width: 302px;
   box-sizing: border-box;
   position: absolute;
+  right: 27px;
+  top: 64px;
   padding-top: 27px;
   padding-bottom: 32px;
   padding-left: 25px;
@@ -898,14 +953,20 @@ p.work-time-info {
   border-radius: 50%;
 }
 
-.footer-links {
+.footer-links ul {
   width: 340px;
+  height: 50px;
   font-size: 13px;
   font-weight: 400;
   line-height: 16px;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  flex-direction: column;
+}
+
+.footer-links ul li {
+  margin-right: 31px;
+  margin-bottom: 5px;
 }
 
 .footer-links li:first-child {

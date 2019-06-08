@@ -51,7 +51,23 @@
       </div>
       <div class="site-tools">
         <div class="search">
-          <button type="submit" class="site-search" aria-label="Поиск"></button>
+          <button type="submit" class="site-search" aria-label="Поиск">
+            <svg width="17px" height="17px" viewBox="0 0 17 17" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <g id="Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Index" transform="translate(-935.000000, -30.000000)" fill="#FFFFFF">
+            <g id="Шапка" transform="translate(27.000000, 9.000000)">
+                <g id="Поиск" transform="translate(899.000000, 12.000000)">
+                    <g id="loupe" transform="translate(9.000000, 9.000000)">
+                        <g id="Shape">
+                            <path d="M16.958,15.527 L11.75,10.32 C12.5625824,9.21214288 13.0004848,7.87391313 13,6.5 C13,2.91014913 10.0898509,-5.7729205e-16 6.5,0 C2.91014913,5.7729205e-16 -2.82015028e-16,2.91014913 -7.21644966e-16,6.5 C-1.1612749e-15,10.0898509 2.91014913,13 6.5,13 C7.8817553,13.0000696 9.2271839,12.5574344 10.339,11.737 L15.544,16.941 L16.958,15.527 Z M6.5,11 C4.019,11 2,8.981 2,6.5 C2,4.019 4.019,2 6.5,2 C8.981,2 11,4.019 11,6.5 C11,8.981 8.981,11 6.5,11 Z" fill-rule="nonzero"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
+          </button>
           <form class="search-form" action="https://htmlacademy.ru" method="post">
             <p>
               <label class="visually-hidden" for="field-search">Поиск по сайту</label>
@@ -131,6 +147,57 @@
     <a class="button" href="#">Хочу шоколадки!</a>
   </article>
     </div>
+  <section class="catalog">
+    <h2 class="visually-hidden">Список сортов мороженого</h2>
+    <ul class="catalog-list">
+      <li class="catalog-item">
+        <p class="catalog-item-image">
+          <img src="img/product-1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом
+               и цитрусовой стружкой ">
+        </p>
+        <h3>
+          <a href="catalog-item-1.html">
+            <span class="catalog-item-title">Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
+          </a>
+        </h3>
+        <p class="catalog-item-price">310 ₽<span class="per-kilogram">/кг</span></p>
+      </li>
+      <li class="catalog-item">
+        <p class="catalog-item-image">
+          <img src="img/product-2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада ">
+        </p>
+        <h3>
+          <a href="catalog-item-2.html">
+            <span class="catalog-item-title">Сливочно-кофейное с кусочками шоколада</span>
+          </a>
+        </h3>
+        <p class="catalog-item-price">380 ₽<span class="per-kilogram">/кг</span></p>
+      </li>
+      <li class="catalog-item">
+        <p class="catalog-item-image">
+          <img src="img/product-3.jpg" width="267" height="267"
+               alt="Сливочно-клубничное с присыпкой из белого шоколада">
+        </p>
+        <h3>
+          <a href="catalog-item-3.html">
+            <span class="catalog-item-title">Сливочно-клубничное с присыпкой из белого шоколада</span>
+          </a>
+        </h3>
+        <p class="catalog-item-price">355 ₽<span class="per-kilogram">/кг</span></p>
+      </li>
+      <li class="catalog-item">
+        <p class="catalog-item-image">
+          <img src="img/product-4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
+        </p>
+        <h3>
+          <a href="catalog-item-4.html">
+            <span class="catalog-item-title">Сливочное крем-брюле с карамельной подливкой</span>
+          </a>
+        </h3>
+        <p class="catalog-item-price">415 ₽<span class="per-kilogram">/кг</span></p>
+      </li>
+    </ul>
+  </section>
   <div class="index-columns">
     <section class="features">
       <p>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</p>
@@ -202,8 +269,8 @@
     <p>
       <img src="img/map.jpg" width="1200" height="430" alt="Адрес главного офиса по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
     </p>
-  </section>
-  <section class="contacts">
+    <div class="pin">Место на карте</div>
+    <div class="contacts">
     <h2 class="visually-hidden">Контактная информация</h2>
     <p class="address-info">
       Адрес главного офиса <br>
@@ -217,7 +284,9 @@
     <p class="contacts-number">8 812 450-25-25</p>
     <p class="work-time-info">(с 10 до 20 ежедневно)</p>
     <a class="button" href="#">Форма обратной связи</a>
+  </div>
   </section>
+
   </div>
 </main>
 <footer class="main-footer">
