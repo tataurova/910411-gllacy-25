@@ -29,7 +29,23 @@
       </div>
       <div class="site-tools">
         <div class="search">
-          <button type="submit" class="site-search" aria-label="Поиск"></button>
+          <button type="submit" class="site-search" aria-label="Поиск">
+            <svg width="17px" height="17px" viewBox="0 0 17 17" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <g id="Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Index" transform="translate(-935.000000, -30.000000)" fill="#FFFFFF">
+            <g id="Шапка" transform="translate(27.000000, 9.000000)">
+                <g id="Поиск" transform="translate(899.000000, 12.000000)">
+                    <g id="loupe" transform="translate(9.000000, 9.000000)">
+                        <g id="Shape">
+                            <path d="M16.958,15.527 L11.75,10.32 C12.5625824,9.21214288 13.0004848,7.87391313 13,6.5 C13,2.91014913 10.0898509,-5.7729205e-16 6.5,0 C2.91014913,5.7729205e-16 -2.82015028e-16,2.91014913 -7.21644966e-16,6.5 C-1.1612749e-15,10.0898509 2.91014913,13 6.5,13 C7.8817553,13.0000696 9.2271839,12.5574344 10.339,11.737 L15.544,16.941 L16.958,15.527 Z M6.5,11 C4.019,11 2,8.981 2,6.5 C2,4.019 4.019,2 6.5,2 C8.981,2 11,4.019 11,6.5 C11,8.981 8.981,11 6.5,11 Z" fill-rule="nonzero"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
+          </button>
           <form class="search-form" action="https://htmlacademy.ru" method="post">
             <p>
               <label class="visually-hidden" for="field-search">Поиск по сайту</label>
@@ -90,7 +106,7 @@
           </li>
         </ul>
         <b class="basket-total-price">Итого: 750 руб.</b>
-        <button class="button button-create-order" type="submit">Оформить заказ</button>
+        <button class="button" type="submit">Оформить заказ</button>
           </div>
         </div>
       </div>
@@ -115,9 +131,73 @@
 
   <section class="filters">
     <h2 class="visually-hidden">Фильтр товаров</h2>
-
-    <!-- здесь будет форма -->
-
+<form class="filter" method="get" action="https://echo.htmlacademy.ru">
+  <fieldset>
+        <legend>Сортировка:</legend>
+        <select name="sorting">
+          <option value="popularity">по популярности</option>
+        </select>
+  </fieldset>
+  <fieldset>
+        <legend>Цена: 100 руб. – 500 руб.</legend>
+        <div class="range-filter">
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar" style="margin-left: 30%; width: 45%"></div>
+            </div>
+            <div class="toggle toggle-min"></div>
+            <div class="toggle toggle-max"></div>
+          </div>
+        </div>
+  </fieldset>
+  <fieldset>
+    <legend>Жирность:</legend>
+    <ul class="fatness">
+      <li class="filter-option">
+        <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="0 percent" id="filter-0-percent">
+        <label for="filter-0-percent">0%</label>
+      </li>
+      <li class="filter-option">
+        <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="10 percent" id="filter-10-percent">
+        <label for="filter-10-percent">До 10%</label>
+      </li>
+      <li class="filter-option">
+        <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="30 percent" id="filter-30-percent">
+        <label for="filter-30-percent">До 30%</label>
+      </li>
+      <li class="filter-option">
+        <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="more then 30 percent" id="filter-more-30-percent">
+        <label for="filter-more-30-percent">Выше 30%</label>
+      </li>
+    </ul>
+  </fieldset>
+  <fieldset>
+    <legend>Наполнители</legend>
+    <ul class="fillers">
+      <li class="filter-option">
+        <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="chocolate" id="filter-chocolate" checked>
+        <label for="filter-chocolate">Шоколадные</label>
+      </li>
+      <li class="filter-option">
+        <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="sugar-powder" id="filter-sugar-powder" checked>
+        <label for="filter-chocolate">Сахарные присыпки</label>
+      </li>
+      <li class="filter-option">
+        <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="fruits" id="filter-fruits" checked>
+        <label for="filter-fruits">Фрукты</label>
+      </li>
+      <li class="filter-option">
+        <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="syrup" id="filter-syrup" checked>
+        <label for="filter-syrup">Сиропы</label>
+      </li>
+      <li class="filter-option">
+        <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="jam" id="filter-jam" checked>
+        <label for="filter-jam">Джемы</label>
+      </li>
+    </ul>
+    </fieldset>
+    <button type="submit" class="filter-button">Применить</button>
+</form>
   </section>
   <section class="catalog">
     <h2 class="visually-hidden">Список сортов мороженого</h2>
