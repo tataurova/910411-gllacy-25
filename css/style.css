@@ -471,7 +471,6 @@ p.login-password-info {
 
 .basket-modal {
   width: 538px;
-  height: 242px;
   padding: 20px;
   border-radius: 5px;
   background-color: #F8F7F4;
@@ -511,6 +510,17 @@ p.login-password-info {
 .basket-list li {
   display: flex;
   align-items: center;
+  margin-bottom: 20px;
+}
+
+.basket-modal .button {
+  align-self: flex-end;
+  padding-top: 10px;
+  padding-bottom: 14px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: 0;
+  margin-bottom: 0;
 }
 
 .basket-list h3,
@@ -546,6 +556,17 @@ p.login-password-info {
 .basket-total-price {
   color: #323232;
   align-self: flex-end;
+  position: relative;
+}
+
+.basket-total-price::before {
+  content: "";
+  position: absolute;
+  top: -12px;
+  left: -420px;
+  min-width: 510px;
+  height: 1px;
+  background: #CACAC7;
 }
 
 .button-delete {
