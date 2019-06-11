@@ -771,10 +771,14 @@ p.login-password-info {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
+  font-size: 14px;
+  line-height: 16px;
+  position: absolute;
+  top: 98px;
 }
 
 .breadcrumbs li {
-  margin-right: 20px;
+  margin-right: 11px;
 }
 
 .breadcrumbs li:not(:last-child)::after {
@@ -791,7 +795,7 @@ p.login-password-info {
 }
 
 .range-controls .scale {
-  width: 179px;
+  width: 177px;
   height: 4px;
   background: #D0D9D2;
   margin-top: 9px;
@@ -815,11 +819,11 @@ p.login-password-info {
 }
 
 .range-controls .toggle-min {
-  left: 40px;
+  left: 19px;
 }
 
 .range-controls .toggle-max {
-  left: 134px;
+  left: 117px;
 }
 
 .price-controls {
@@ -865,23 +869,16 @@ p.login-password-info {
   background-color: #A9BBB1;
   color: #FFFFFF;
   position: relative;
-  margin-right: 40px;
+  margin-right: 36px;
   appearance: none;
   -webkit-appearance: none;
-}
-
-.filter select::after {
-  content: "";
-  height: 10px;
-  width: 10px;
-  border: 2px solid red;
 }
 
 .filter fieldset {
   padding: 0;
   margin: 0;
   margin-right: 12px;
-  margin-bottom: 32px;
+  margin-bottom: 35px;
   border-radius: 30px;
   border: none;
   background-color: #A9BBB1;
@@ -910,9 +907,13 @@ p.login-password-info {
   font-size: 14px;
   font-weight: 400;
   line-height: 16px;
-  text-transform: lowercase;
   position: absolute;
-  top: -20px;
+  top: -21px;
+  left: 12px;
+}
+
+.filter select {
+  text-transform: lowercase;
 }
 
 .filter ul {
@@ -923,8 +924,17 @@ p.login-password-info {
 }
 
 .filter-option {
-  margin-right: 19px;
-  padding-left: 45px;
+  margin-right: 22px;
+  padding-left: 28px;
+}
+
+.fillers .filter-option {
+  padding-left: 32px;
+  margin-right: 20px;
+}
+
+.filter-option:last-child {
+  margin-right: 0;
 }
 
 .filter-option label {
@@ -950,9 +960,9 @@ p.login-password-info {
   content: "";
   position: absolute;
   top: 0;
-  left: -42px;
-  width: 20px;
-  height: 20px;
+  left: -30px;
+  width: 16px;
+  height: 16px;
   border-radius: 2px;
   border: 2px solid #EDF1EF;
   opacity: 0.8;
@@ -962,7 +972,7 @@ p.login-password-info {
   content: "";
   position: absolute;
   top: 2px;
-  left: -38px;
+  left: -26px;
   width: 19px;
   height: 15px;
   background-image: url("../img/check.svg");
@@ -974,11 +984,11 @@ p.login-password-info {
 .filter-input-radio + label::before {
   content: "";
   position: absolute;
-  top: -1px;
-  left: -42px;
-  width: 22px;
-  height: 22px;
-  border: 2px solid #EDF1EF;
+  top: 0;
+  left: -32px;
+  width: 16px;
+  height: 16px;
+  border: 3px solid #EDF1EF;
   border-radius: 50%;
   opacity: 0.8;
 }
@@ -986,8 +996,8 @@ p.login-password-info {
 .filter-input-radio:checked + label::after {
   content: "";
   position: absolute;
-  top: 8px;
-  left: -33px;
+  top: 7px;
+  left: -25px;
   width: 8px;
   height: 8px;
   background-color: #EDF1EF;
@@ -1030,25 +1040,31 @@ p.login-password-info {
 }
 
 .catalog-list {
- display: flex;
- flex-wrap: wrap;
- justify-content: space-between;
- padding: 0;
- margin: 0;
- list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 5px;
+  list-style: none;
+}
+
+.inner-page .catalog-list {
+  margin-bottom: 40px;
 }
 
 .catalog-item {
   width: 267px;
-  margin-bottom: 40px;
+  margin-bottom: 34px;
   margin-right: 26px;
+  margin-top: 2px;
   text-align: center;
   position: relative;
 }
 
 .catalog-item h3 {
   margin: 0;
-  margin-top: 10px;
+  margin-top: 9px;
 }
 
 .catalog-item p {
@@ -1089,7 +1105,7 @@ p.login-password-info {
   justify-content: flex-end;
   padding: 0;
   margin: 0;
-  margin-bottom: 32px;
+  margin-bottom: 30px;
   list-style: none;
   line-height: 18px;
 }
@@ -1126,9 +1142,14 @@ p.login-password-info {
   border-radius: 50%;
 }
 
+.catalog-item-image {
+  margin: 0;
+  padding: 0;
+}
+
 .catalog-item-price {
   position: absolute;
-  top: 223px;
+  top: 222px;
   left: -2px;
 }
 
@@ -1211,7 +1232,7 @@ p.login-password-info {
   width: 560px;
   padding: 20px;
   padding-top: 29px;
-  padding-bottom: 25px;
+  padding-bottom: 0px;
   font-weight: 400;
   box-sizing: border-box;
   color: #5A5A5A;
