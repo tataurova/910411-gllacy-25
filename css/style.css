@@ -934,11 +934,6 @@ input[type="search"]::placeholder {
   opacity: 0.8;
 }
 
-.filter-input:disabled + label {
-  color: #FFFFFF;
-  opacity: 0.5;
-}
-
 .filter-input-radio:checked + label::after {
   content: "";
   position: absolute;
@@ -980,6 +975,10 @@ input[type="search"]::placeholder {
   box-shadow: inset 0 2px 1px 0 #696969;
 }
 
+.filter-option label::before:hover,
+.filter-option label::after:hover {
+  opacity: 1;
+}
 
 .catalog-list {
  display: flex;
@@ -1015,6 +1014,41 @@ input[type="search"]::placeholder {
   border-radius: 3px;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.40);
   background: rgba(255, 255, 255, 0.2);
+}
+
+.pagination-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 32px;
+  list-style: none;
+  line-height: 18px;
+}
+
+.pagination-item:last-child {
+  margin-right: 0;
+}
+
+.pagination-item a {
+  color: #FFFFFF;
+  display: block;
+  padding: 5px 10px;
+ }
+
+.pagination-item:hover,
+.pagination-item:focus {
+  background-color: #9CB0A5;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.pagination-item-current a,
+.pagination-item:active a {
+  color: #323232;
+  background: #FFFFFF;
+  border-radius: 50%;
 }
 
 .catalog-item .button {
