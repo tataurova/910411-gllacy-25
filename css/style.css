@@ -23,10 +23,10 @@ a {
 
 .button {
   margin: 10px;
-  padding-top: 9px;
-  padding-bottom: 12px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 13px;
+  padding-left: 22px;
+  padding-right: 22px;
   color: #FEFEFE;
   border: none;
   border-radius: 30px;
@@ -92,7 +92,7 @@ input[type="radio"].visually-hidden {
 }
 
 .inner-page .main-navigation-container img {
-  margin-right:23px;
+  margin-right: 10px;
 }
 
 .main-header-logo {
@@ -129,9 +129,9 @@ site-wrapper::after {
 
 .slider {
   position: relative;
-  padding-top: 275px;
+  padding-top: 276px;
   text-align: center;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 .slider-list {
@@ -147,8 +147,7 @@ site-wrapper::after {
 .slide-title {
   width: 700px;
   margin: 0 auto;
-  margin-bottom: 27px;
-
+  margin-bottom: 29px;
   font-size: 60px;
   line-height: 60px;
   font-weight: 800;
@@ -158,12 +157,15 @@ site-wrapper::after {
   font-size: 32px;
   line-height: 44px;
   margin: 0 auto;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 11px;
 }
 
 .slider-controls {
   position: absolute;
-  bottom: 63px;
+  bottom: 60px;
   left: 0;
   z-index: 20;
   font-size: 0;
@@ -176,7 +178,7 @@ site-wrapper::after {
   margin-right: 8px;
   vertical-align: top;
   background-color: transparent;
-  border: 2px solid #ffffff;
+  border: 2px solid #FFFFFF;
   border-radius: 50%;
   cursor: pointer;
 }
@@ -186,17 +188,17 @@ site-wrapper::after {
 }
 
 #product-1:checked ~ .site-wrapper {
-  background-color: #849d8f;
+  background-color: #849D8F;
   background-image: url("../img/slider-item1.png");
 }
 
 #product-2:checked ~ .site-wrapper {
-  background-color: #8996a6;
+  background-color: #8996A6;
   background-image: url("../img/slider-item2.png");
 }
 
 #product-3:checked ~ .site-wrapper {
-  background-color: #9d8b84;
+  background-color: #9D8B84;
   background-image: url("../img/slider-item3.png");
 }
 
@@ -209,7 +211,7 @@ site-wrapper::after {
 #product-1:checked ~ .site-wrapper label[for="product-1"],
 #product-2:checked ~ .site-wrapper label[for="product-2"],
 #product-3:checked ~ .site-wrapper label[for="product-3"] {
-  background-color: #ffffff;
+  background-color: #FFFFFF;
 }
 
 .site-navigation {
@@ -219,6 +221,21 @@ site-wrapper::after {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+  position: relative;
+}
+
+.site-navigation li {
+  margin-right: 3px;
+  padding: 7px 13px;
+}
+
+.site-navigation .item-current {
+  background-color: #D07058;
+  border-radius: 30px;
+}
+
+.site-navigation .item-current a {
+  border: none;
 }
 
 .site-navigation a {
@@ -226,10 +243,16 @@ site-wrapper::after {
   vertical-align: middle;
 }
 
-.site-navigation a:hover {
-  color: #323232;
+.site-navigation li:hover:not(.item-current),
+.site-navigation li:not(.item-current):focus {
   background-color: #F8F7F4;
   border-radius: 30px;
+  color: #323232;
+}
+
+.site-navigation a:hover:not(.item-current a),
+.site-navigation a:focus:not(.item-current a) {
+  border: none;
 }
 
 .user-navigation {
@@ -281,26 +304,31 @@ site-wrapper::after {
 }
 
 .search-form {
-  width: 330px;
-  height: 87px;
-  padding: 0;
-  padding-left: 14px;
+  padding: 20px;
+  padding-left: 16px;
   border-radius: 5px;
   background-color: #F8F7F4;
   position: absolute;
+  box-sizing: border-box;
   top: 59px;
   right: 280px;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.40);
   display: none;
 }
 
-.search-form input,textarea {
-  width: 314px;
+.search-form input {
+  width: 308px;
   font-size: 14px;
   line-height: 24px;
-  padding: 14px;
+  padding: 9px;
+  padding-left: 12px;
   border: 1px solid #D3D3D2;
   border-radius: 5px;
+  margin: 0;
+}
+
+.search-form p {
+  margin: 0;
 }
 
 input[type="search"]::placeholder {
@@ -314,7 +342,7 @@ input[type="search"]::placeholder {
 }
 
 .login-form {
-  padding: 20px;
+  padding: 20px 17px;
   border-radius: 5px;
   background-color: #F8F7F4;
   position: absolute;
@@ -329,12 +357,16 @@ input[type="search"]::placeholder {
   z-index: 100;
 }
 
+.new-registration {
+  margin-top: -2px;
+}
+
 .login-form input, textarea {
   font-size: 14px;
   line-height: 24px;
-  padding-top: 10px;
-  padding-bottom: 11px;
-  padding-left: 16px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-left: 12px;
   padding-right: 10px;
   border: 1px solid #D3D3D2;
   border-radius: 5px;
@@ -344,7 +376,7 @@ input[type="search"]::placeholder {
 .login-form p {
   margin: 0;
   padding: 0;
-  margin-bottom: 17px;
+  margin-bottom: 19px;
 }
 
 .login-button {
@@ -352,6 +384,8 @@ input[type="search"]::placeholder {
  padding-right: 25px;
  padding-top: 12px;
  padding-bottom: 12px;
+ margin: 0;
+ margin-right: 10px;
 }
 
 p.login-password-info {
@@ -361,7 +395,11 @@ p.login-password-info {
   justify-content: center;
 }
 
-.login-password-info a{
+.login-form a {
+  text-decoration: underline;
+}
+
+.login-password-info a {
   font-size: 13px;
   font-weight: 400;
   line-height: 24px;
@@ -415,14 +453,11 @@ p.login-password-info {
 
 .basket-link::before {
   content: "";
-
   position: absolute;
   top: 6px;
   left: 15px;
-
   width: 21px;
   height: 20px;
-
   background-image: url("../img/basket.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -454,6 +489,7 @@ p.login-password-info {
 
 .site-navigation a,
 .catalog-item-title,
+.breadcrumbs a,
 .footer-links a,
 .copyright-link {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
@@ -479,8 +515,11 @@ p.login-password-info {
 }
 
 .basket-modal {
-  width: 538px;
-  padding: 20px;
+  width: 540px;
+  padding-bottom: 23px;
+  padding-top: 20px;
+  padding-left: 16px;
+  padding-right: 17px;
   border-radius: 5px;
   background-color: #F8F7F4;
   color: #323232;
@@ -489,8 +528,9 @@ p.login-password-info {
   right: 0px;
   display: flex;
   flex-direction: column;
-  display: none;
+  box-sizing: border-box;
   z-index: 100;
+  display: none;
 }
 
 .basket-modal img {
@@ -501,10 +541,12 @@ p.login-password-info {
 .basket-list {
   padding: 0;
   margin: 0;
+  margin-bottom: 14px;
 }
 
 .basket-list h3 {
-  width: 245px;
+  width: 230px;
+  margin-top: 7px;
   order: 1;
 }
 
@@ -518,8 +560,7 @@ p.login-password-info {
 
 .basket-list li {
   display: flex;
-  align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 3px;
 }
 
 .basket-modal .button {
@@ -552,28 +593,37 @@ p.login-password-info {
   display: flex;
 }
 
-.basket-list p {
-  margin: 0;
-  padding: 0;
+.basket-item {
+  margin-right: 15px;
+}
+
+.item-small-photo {
+  margin-top: 0;
 }
 
 .basket-item-price {
   width: 123px;
   line-height: 16px;
+  margin-top: 7px;
+}
+
+.item-total-price {
+  margin-top: 7px;
 }
 
 .basket-total-price {
   color: #323232;
   align-self: flex-end;
   position: relative;
+  margin-bottom: 5px;
 }
 
 .basket-total-price::before {
   content: "";
   position: absolute;
   top: -12px;
-  left: -420px;
-  min-width: 510px;
+  left: -402px;
+  min-width: 505px;
   height: 1px;
   background: #CACAC7;
 }
@@ -586,7 +636,8 @@ p.login-password-info {
   background-position: center;
   border: none;
   padding: 0;
-  margin-right: 9px;
+  margin-right: 14px;
+  margin-top: 9px;
 }
 
 .price-for-kilogram {
@@ -639,9 +690,9 @@ p.login-password-info {
   width: 560px;
   font-size: 18px;
   box-sizing: border-box;
-  padding-right: 20px;
+  padding-right: 21px;
   padding-bottom: 24px;
-  padding-top: 30px;
+  padding-top: 28px;
   padding-left: 19px;
   list-style: none;
   text-align: left;
@@ -657,13 +708,13 @@ p.login-password-info {
 .advertisement-two h2 {
   font-size: 35px;
   margin: 0;
-  margin-bottom: 24px;
+  margin-bottom: 23px;
 }
 
 .advertisement-one p,
 .advertisement-two p {
   margin: 0;
-  margin-bottom: 42px;
+  margin-bottom: 46px;
 
 }
 
@@ -681,10 +732,10 @@ p.login-password-info {
 .features {
   box-sizing: border-box;
   margin-left: 0;
-  padding-top: 22px;
+  padding-top: 23px;
   padding-left: 20px;
   padding-right: 0;
-  padding-bottom: 0;
+  padding-bottom: 5px;
   color: #323232;
   background-color: #EFE5CC;
   background-image: url("../img/waffle-big.png");
@@ -765,7 +816,7 @@ p.login-password-info {
   display: flex;
   justify-content: space-between;
   padding: 0;
-  margin-bottom: 40px;
+  margin-bottom: 37px;
 }
 
 .features-list,
@@ -792,7 +843,6 @@ p.login-password-info {
 
 .breadcrumbs li:not(:last-child)::after {
   content: "»";
-  bottom: 0px;
 }
 
 .range-controls {
@@ -867,7 +917,6 @@ p.login-password-info {
 }
 
 .filters {
-  /*width: 857px;*/
   width: 1000px;
   display: flex;
   flex-wrap: wrap;
@@ -884,6 +933,12 @@ p.login-password-info {
   appearance: none;
   -webkit-appearance: none;
   padding-right: 36px;
+  text-transform: lowercase;
+}
+
+.filter option {
+  background: #FFFFFF;
+  color: red;
 }
 
 .filter fieldset {
@@ -922,10 +977,6 @@ p.login-password-info {
   position: absolute;
   top: -21px;
   left: 12px;
-}
-
-.filter select {
-  text-transform: lowercase;
 }
 
 .filter ul {
@@ -1021,7 +1072,7 @@ p.login-password-info {
   color: #FFFFFF;
   border: 2px solid #FFFFFF;
   margin: 0;
-  padding: 0;
+  margin-bottom: 35px;
   border-radius: 30px;
   padding-left: 31px;
   padding-right: 31px;
@@ -1057,12 +1108,13 @@ p.login-password-info {
   justify-content: space-between;
   padding: 0;
   margin: 0;
-  margin-bottom: 5px;
+  margin-bottom: 3px;
   list-style: none;
 }
 
 .inner-page .catalog-list {
-  margin-bottom: 47px;
+  margin-bottom: 50px;
+  margin-top: -14px;
 }
 
 .inner-page .catalog-item {
@@ -1073,7 +1125,7 @@ p.login-password-info {
   width: 267px;
   margin-bottom: 34px;
   margin-right: 26px;
-  margin-top: 2px;
+  margin-top: 4px;
   text-align: center;
   position: relative;
 }
@@ -1081,7 +1133,7 @@ p.login-password-info {
 .catalog-item h3 {
   margin: 0 auto;
   padding: 0;
-  margin-top: 9px;
+  margin-top: 5px;
   width: 255px;
 }
 
@@ -1132,6 +1184,7 @@ p.login-password-info {
 
 .pagination-item {
   position: relative;
+  margin-right: 5px;
 }
 
 .pagination-item:last-child {
@@ -1182,7 +1235,6 @@ p.login-password-info {
   color: #FFFFFF;
   display: block;
   padding: 4px 8px;
-  margin-right: 4px;
  }
 
 .pagination-item:hover,
@@ -1218,16 +1270,12 @@ p.login-password-info {
   left: -2px;
 }
 
-.site-navigation li {
-  position: relative;
-  margin-right: 28px;
-}
-
 .catalog-more {
   position: absolute;
-  top: 36px;
-  left: -6px;
+  top: 38px;
+  left: -8px;
   padding: 0;
+  padding-top: 3px;
   margin: 0;
   width: 143px;
   min-height: 170px;
@@ -1235,6 +1283,7 @@ p.login-password-info {
   border-radius: 5px;
   display: none;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.40);
+  z-index: 100;
 }
 
 .catalog-more a {
@@ -1245,7 +1294,33 @@ p.login-password-info {
   margin: 0;
   padding: 0;
   padding-left: 20px;
+  padding-right: 20px;
   border-bottom: none;
+}
+
+.catalog-more li:first-child a.catalog-more-item:first-child {
+  font-weight: 700;
+}
+
+.catalog-more li:first-child {
+  position: relative;
+  margin-bottom: 9px;
+}
+
+.catalog-more li:first-child::after {
+  content: "";
+  width: 128px;
+  height: 1px;
+  background: #CACAC7;
+  position: absolute;
+  left: 7px;
+  bottom: -7px;
+}
+
+
+.catalog-more li {
+  margin: 0;
+  padding: 0;
 }
 
 .catalog-more-item:hover,
@@ -1283,7 +1358,7 @@ p.login-password-info {
   margin: 0;
   font-size: 16px;
   font-weight: 500;
-  margin-top: 3px;
+  margin-top: 5px;
   margin-bottom: 5px;
 }
 
@@ -1307,7 +1382,6 @@ p.login-password-info {
 
 .mailing {
   display: flex;
-  flex-wrap: no-wrap;
   align-items: center;
 }
 
@@ -1426,8 +1500,9 @@ p.login-password-info {
 }
 
 .subscribing input[type="email"] {
-  width: 371px;
+  width: 368px;
   height: 44px;
+  padding-left: 14px;
 }
 
 .modal-close {
@@ -1535,6 +1610,10 @@ p.work-time-info {
   display: flex;
   align-items: center;
   min-height: 105px;
+}
+
+
+.inner-page .main-footer .container {
   border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
@@ -1555,6 +1634,10 @@ p.work-time-info {
 .social-button svg {
   border: 2px solid rgba(255, 255, 255, 0.8);;
   border-radius: 50%;
+}
+
+.footer-links {
+  margin-right: 203px;
 }
 
 .footer-links ul {
@@ -1596,9 +1679,11 @@ p.work-time-info {
   line-height: 16px;
   display: flex;
   flex-direction: column;
+  margin-top: -19px;
+  /*
   position: absolute;
   right: 54px;
-  top: 10px;
+  top: 16px;*/
 }
 
 .footer-copyright span {
