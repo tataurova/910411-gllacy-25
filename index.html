@@ -9,7 +9,7 @@
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
-<body>
+<body class="main-page">
 <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
 <input class="visually-hidden" type="radio" id="product-2" name="toggle">
 <input class="visually-hidden" type="radio" id="product-3" name="toggle">
@@ -177,7 +177,6 @@
         <ul class="catalog-list">
           <li class="catalog-item">
             <p class="catalog-item-image">
-              <img class="hit" src="img/hit.svg" width="61" height="61" alt="Хит">
               <img src="img/product-1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом
                и цитрусовой стружкой ">
             </p>
@@ -191,7 +190,6 @@
           </li>
           <li class="catalog-item">
             <p class="catalog-item-image">
-              <img class="hit" src="img/hit.svg" width="61" height="61" alt="Хит">
               <img src="img/product-2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада ">
             </p>
             <h3>
@@ -204,7 +202,6 @@
           </li>
           <li class="catalog-item">
             <p class="catalog-item-image">
-              <img class="hit" src="img/hit.svg" width="61" height="61" alt="Хит">
               <img src="img/product-3.jpg" width="267" height="267"
                    alt="Сливочно-клубничное с присыпкой из белого шоколада">
             </p>
@@ -218,7 +215,6 @@
           </li>
           <li class="catalog-item">
             <p class="catalog-item-image">
-              <img class="hit" src="img/hit.svg" width="61" height="61" alt="Хит">
               <img src="img/product-4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
             </p>
             <h3>
@@ -259,7 +255,7 @@
         <article class="blog">
           <h2>Новое в нашем блоге</h2>
           <a href=#>
-            <h3>10 способов сервировки<br>фруктовых щербетов к<br>столу</h3>
+            <h3>10 способов сервировки фруктовых щербетов к столу</h3>
           </a>
         </article>
 
@@ -308,11 +304,11 @@
       <div class="contacts">
         <h2 class="visually-hidden">Контактная информация</h2>
         <p class="address-info">
-          Адрес главного офиса <br>
+          Адрес главного офиса 
           и офлайн-магазина:
         </p>
         <p class="address">
-          ул. Большая Конюшенная<br>
+          ул. Большая Конюшенная
           19/8, Санкт-Петербург
         </p>
         <p class="contact-info">Для заказов по телефону:</p>
@@ -443,10 +439,10 @@
             <a href=#>Для поставщиков</a>
           </li>
           <li>
-            <a href="#">О производстве </a>
+            <a href="#">О производстве</a>
           </li>
           <li>
-            <a href=#>Наши документы </a>
+            <a href=#>Наши документы<</a>
           </li>
           <li>
             <a href=#>Экологические стандарты</a>
@@ -454,79 +450,14 @@
         </ul>
       </div>
       <p class="footer-copyright">
-        <a href="https://htmlacademy.ru">
+        <a href="https://htmlacademy.ru/intensive/htmlcss">
           <img src="img/logo-htmlacademy.svg" width="109" height="38" alt="Логотип HTML Academy">
         </a>
-        <span>Сделано в <a class="copyright-link" href="https://htmlacademy.ru">HTML Academy</a>© 2019</span>
+        <span>Сделано в <a class="copyright-link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>© 2019</span>
       </p>
     </div>
   </footer>
 </div>
-
-<script>
-  var link = document.querySelector(".button-feedback");
-
-  var popup = document.querySelector(".modal-mailing");
-  var close = popup.querySelector(".modal-close");
-
-  var form = popup.querySelector(".mailing-form");
-  var name = popup.querySelector("#mailing-name");
-  var email = popup.querySelector("[name=email]");
-
-  var isStorageSupport = true;
-  var storage = "";
-
-  try {
-    storage = localStorage.getItem("name");
-  } catch (err) {
-    isStorageSupport = false;
-  }
-
-  link.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    popup.classList.add("modal-show");
-    nameTemp = popup.querySelector("#mailing-name");
-
-    if (storage) {
-      name.value = storage;
-      email.focus();
-    } else {
-      nameTemp.focus();
-    }
-  });
-
-  close.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    popup.classList.remove("modal-show");
-    popup.classList.remove("modal-error");
-  });
-
-  form.addEventListener("submit", function (evt) {
-    if (!name.value || !email.value) {
-      evt.preventDefault();
-      popup.classList.remove("modal-error");
-      popup.offsetWidth = popup.offsetWidth;
-      popup.classList.add("modal-error");
-    } else {
-      if (isStorageSupport) {
-        localStorage.setItem("name", name.value);
-      }
-    }
-  });
-
-  window.addEventListener("keydown", function (evt) {
-    if (evt.keyCode === 27) {
-      evt.preventDefault();
-      if (popup.classList.contains("modal-show")) {
-        popup.classList.remove("modal-show");
-        popup.classList.remove("modal-error");
-      }
-    }
-  });
-
-
-
-
-</script>
+<script src="js/script.js"></script>
 </body>
 </html>
