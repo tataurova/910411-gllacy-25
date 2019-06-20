@@ -224,51 +224,49 @@ site-wrapper::after {
   flex-wrap: wrap;
 }
 
-/*
-.site-navigation li {
-  margin-right: 3px;
-  padding: 7px 13px;
-}
-*/
-
 .site-navigation li {
   padding-bottom: 10px;
   padding-top: 10px;
   position: relative;
-}
-
-.site-navigation a {
-  margin-left: 13px;
-  margin-right: 13px;
-  margin-top: 7px;
-  margin-bottom: 7px;
+  align-self: center;
 }
 
 .site-navigation .item-current {
   background-color: #D07058;
   border-radius: 30px;
-}
-
-.site-navigation .item-current a {
   border: none;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 13px;
+  padding-right: 13px;
+  margin: 0;
+  margin-right: 3px;
 }
 
 .site-navigation a {
-  display: block;
-  vertical-align: middle;
+  align-self: center;
 }
 
-.site-navigation a:hover:not(.item-current),
-.site-navigation a:focus:not(.item-current) {
+.site-navigation-item {
+  display: block;
+  vertical-align: middle;
+  margin-left: 13px;
+  margin-right: 16px;
+  margin-top: 7px;
+  margin-bottom: 6px;
+}
+
+.site-navigation-item:hover,
+.site-navigation-item:focus {
   background-color: #F8F7F4;
   border-radius: 30px;
   color: #323232;
   margin: 0;
-  padding: 7px 13px;
-}
-
-.site-navigation a:hover:not(.item-current a),
-.site-navigation a:focus:not(.item-current a) {
+  margin-right: 3px;
+  padding-top: 7px;
+  padding-bottom: 6px;
+  padding-left: 13px;
+  padding-right: 13px;
   border: none;
 }
 
@@ -838,7 +836,7 @@ p.login-password-info {
   display: flex;
   justify-content: space-between;
   padding: 0;
-  margin-bottom: 37px;
+  margin-bottom: 39px;
 }
 
 .features-list,
@@ -1368,12 +1366,12 @@ p.login-password-info {
   padding: 0;
 }
 
-.catalog-more-item:hover,
-.catalog-more-item:focus {
+.catalog-more li:hover,
+.catalog-more li:focus {
   background-color: #FBDED7;
 }
 
-.catalog-more-item:active {
+.catalog-more li:active {
   background-color: #F6B5A5;
 }
 
