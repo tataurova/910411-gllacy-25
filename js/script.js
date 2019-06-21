@@ -1,6 +1,7 @@
 var link = document.querySelector(".button-feedback");
 
   var popup = document.querySelector(".modal-mailing");
+  var overlay = document.querySelector(".overlay");
   var close = popup.querySelector(".modal-close");
 
   var form = popup.querySelector(".mailing-form");
@@ -19,6 +20,7 @@ var link = document.querySelector(".button-feedback");
   link.addEventListener("click", function (evt) {
     evt.preventDefault();
     popup.classList.add("modal-show");
+    overlay.classList.add("overlay-show");
     nameTemp = popup.querySelector("#mailing-name");
 
     if (storage) {
@@ -32,6 +34,7 @@ var link = document.querySelector(".button-feedback");
   close.addEventListener("click", function (evt) {
     evt.preventDefault();
     popup.classList.remove("modal-show");
+    overlay.classList.remove("overlay-show");
     popup.classList.remove("modal-error");
   });
 
@@ -53,6 +56,7 @@ var link = document.querySelector(".button-feedback");
       evt.preventDefault();
       if (popup.classList.contains("modal-show")) {
         popup.classList.remove("modal-show");
+        overlay.classList.remove("overlay-show");
         popup.classList.remove("modal-error");
       }
     }
