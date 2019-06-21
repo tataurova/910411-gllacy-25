@@ -229,8 +229,7 @@ site-wrapper::after {
 }
 
 .site-navigation li {
-  padding-bottom: 10px;
-  padding-top: 10px;
+  padding-bottom: 6px;
   position: relative;
   align-self: center;
 }
@@ -247,6 +246,10 @@ site-wrapper::after {
   margin-right: 3px;
 }
 
+.item-current span.item-name {
+  border: none;
+}
+
 .site-navigation a {
   align-self: center;
 }
@@ -254,10 +257,11 @@ site-wrapper::after {
 .site-navigation-item {
   display: block;
   vertical-align: middle;
-  margin-left: 13px;
-  margin-right: 16px;
-  margin-top: 7px;
-  margin-bottom: 6px;
+  position: relative;
+  padding-left: 13px;
+  padding-right: 16px;
+  padding-top: 7px;
+  padding-bottom: 6px;
 }
 
 .site-navigation-item:hover,
@@ -271,6 +275,10 @@ site-wrapper::after {
   padding-bottom: 6px;
   padding-left: 13px;
   padding-right: 13px;
+  border: none;
+}
+
+.site-navigation-item:hover .item-name {
   border: none;
 }
 
@@ -306,6 +314,7 @@ site-wrapper::after {
 
 .search {
   position: relative;
+  padding-bottom: 4px;
 }
 
 .site-search {
@@ -318,6 +327,11 @@ site-wrapper::after {
   padding: 0;
   padding-left: 2px;
   padding-top: 2px;
+}
+
+.site-search:hover,
+.site-search:focus {
+  background: #FFFFFF;
 }
 
 .site-search:hover path,
@@ -336,7 +350,7 @@ site-wrapper::after {
   background-color: #F8F7F4;
   position: absolute;
   box-sizing: border-box;
-  top: 34px;
+  top: 36px;
   right: 0px;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.40);
   display: none;
@@ -365,6 +379,8 @@ input[type="search"]::placeholder {
 
 .user-navigation li {
   position: relative;
+  padding-top: 7px;
+  padding-bottom: 7px;
 }
 
 .login-form {
@@ -372,7 +388,7 @@ input[type="search"]::placeholder {
   border-radius: 5px;
   background-color: #F8F7F4;
   position: absolute;
-  top: 29px;
+  top: 36px;
   right: 0px;
   display: flex;
   flex-direction: row;
@@ -444,6 +460,7 @@ p.login-password-info {
   padding-left: 44px;
   padding-right: 16px;
   line-height: 16px;
+  margin-bottom: 4px;
 }
 
 .login-link {
@@ -515,11 +532,14 @@ p.login-password-info {
   color: #FFFFFF;
 }
 
-.site-navigation a,
 .catalog-item-title,
 .breadcrumbs a,
 .footer-links a,
 .copyright-link {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.site-navigation .item-name {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
@@ -552,7 +572,7 @@ p.login-password-info {
   background-color: #F8F7F4;
   color: #323232;
   position: absolute;
-  top: 29px;
+  top: 44px;
   right: 0px;
   display: flex;
   flex-direction: column;
@@ -580,6 +600,8 @@ p.login-password-info {
 
 .basket-wrapper {
   position: relative;
+  padding-bottom: 15px;
+  padding-top: 15px;
 }
 
 .basket-wrapper:hover .basket-modal,
@@ -1222,7 +1244,7 @@ p.login-password-info {
   font-weight: 400;
   padding: 0;
   margin: 0;
-  margin-bottom: 34px;
+  margin-bottom: 30px;
   margin-right: 23px;
   list-style: none;
   line-height: 18px;
@@ -1328,8 +1350,8 @@ p.login-password-info {
 
 .catalog-more {
   position: absolute;
-  top: 100%;
-  left: -8px;
+  top: 37px;
+  left: -7px;
   padding: 0;
   padding-top: 3px;
   margin: 0;
@@ -1372,7 +1394,6 @@ p.login-password-info {
   left: 7px;
   bottom: -7px;
 }
-
 
 .catalog-more li {
   margin: 0;
@@ -1483,11 +1504,14 @@ p.login-password-info {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.3);
-  display: none;
 }
 
 .overlay-show {
   display: block;
+}
+
+.overlay-none {
+  display: none;
 }
 
 .modal-show {
@@ -1695,12 +1719,14 @@ p.work-time-info {
 .main-footer .container {
   display: flex;
   align-items: center;
-  min-height: 105px;
+  min-height: 115px;
 }
 
 
 .inner-page .main-footer .container {
   border-top: 1px solid rgba(255, 255, 255, 0.2);
+  box-sizing: border-box;
+  padding: 0;
 }
 
 .footer-social {
@@ -1718,8 +1744,20 @@ p.work-time-info {
 }
 
 .social-button svg {
-  border: 2px solid rgba(255, 255, 255, 0.8);;
+  border: 2px solid rgba(255, 255, 255, 0.5);
   border-radius: 50%;
+}
+
+.social-button svg:hover,
+.social-button svg:focus,
+.social-button svg:active {
+  border: 2px solid rgba(255, 255, 255, 0.7);
+}
+
+.social-button svg:hover path,
+.social-button svg:focus path,
+.social-button svg:active path {
+  opacity: 1.0;
 }
 
 .footer-links {
@@ -1766,10 +1804,6 @@ p.work-time-info {
   display: flex;
   flex-direction: column;
   margin-top: -19px;
-  /*
-  position: absolute;
-  right: 54px;
-  top: 16px;*/
 }
 
 .footer-copyright span {
