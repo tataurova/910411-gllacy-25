@@ -393,10 +393,6 @@ input[type="search"]::placeholder {
   position: absolute;
   top: 40px;
   right: 0px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.40);
   display: none;
   z-index: 2;
@@ -437,7 +433,6 @@ input[type="search"]::placeholder {
  padding-bottom: 12px;
  margin: 0;
  margin-right: 14px;
- margin-left: -3px;
 }
 
 p.login-password-info {
@@ -446,6 +441,8 @@ p.login-password-info {
   flex-direction: column;
   justify-content: center;
   margin-top: -3px;
+  float: right;
+  display: block;
 }
 
 .login-form a {
@@ -458,6 +455,7 @@ p.login-password-info {
   line-height: 24px;
   padding: 0;
   color: #323232;
+  display: block;
 }
 
 .user-navigation > li:hover .login-form,
