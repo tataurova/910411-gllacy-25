@@ -462,7 +462,7 @@ p.login-password-info {
 
 .user-navigation > li:hover .login-form,
 .user-navigation > li:focus .login-form {
-  display: flex;
+  display: block;
 }
 
 .basket-link {
@@ -1262,6 +1262,10 @@ p.login-password-info {
 
 .catalog-item:hover a.button {
   display: block;
+}
+
+.catalog-item:hover .catalog-item-image {
+  z-index: 2;
 }
 
 .pagination-list {
