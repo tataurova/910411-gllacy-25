@@ -381,15 +381,17 @@ input[type="search"]::placeholder {
 
 .user-navigation li {
   position: relative;
-  padding-bottom: 2px;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 
 .login-form {
   padding: 20px 17px;
+  padding-bottom: 18px;
   border-radius: 5px;
   background-color: #F8F7F4;
   position: absolute;
-  top: 36px;
+  top: 40px;
   right: 0px;
   display: flex;
   flex-direction: row;
@@ -425,7 +427,7 @@ input[type="search"]::placeholder {
 .login-form p {
   margin: 0;
   padding: 0;
-  margin-bottom: 19px;
+  margin-bottom: 20px;
 }
 
 .login-button {
@@ -434,7 +436,8 @@ input[type="search"]::placeholder {
  padding-top: 12px;
  padding-bottom: 12px;
  margin: 0;
- margin-right: 10px;
+ margin-right: 14px;
+ margin-left: -3px;
 }
 
 p.login-password-info {
@@ -442,6 +445,7 @@ p.login-password-info {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: -3px;
 }
 
 .login-form a {
