@@ -1011,6 +1011,10 @@ p.login-password-info {
   text-transform: lowercase;
 }
 
+select::-ms-expand {
+  display: none;
+}
+
 .filter select:hover,
 .filter select:focus {
   background: url("../img/select-down-black.svg");
@@ -1878,9 +1882,11 @@ p.work-time-info {
   margin: 0;
   font-size: 12px;
   line-height: 16px;
-  display: flex;
-  flex-direction: column;
   margin-top: -19px;
+}
+
+.footer-copyright span {
+  display: block;
 }
 
 .footer-copyright span {
