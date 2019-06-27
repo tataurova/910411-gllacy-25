@@ -348,7 +348,7 @@ site-wrapper::after {
   background-color: #F8F7F4;
   position: absolute;
   box-sizing: border-box;
-  top: 38px;
+  top: 36px;
   right: 0px;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.40);
   display: none;
@@ -387,7 +387,7 @@ input[type="search"]::placeholder {
   border-radius: 5px;
   background-color: #F8F7F4;
   position: absolute;
-  top: 43px;
+  top: 41px;
   right: 0px;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.40);
   display: none;
@@ -464,7 +464,7 @@ p.login-password-info {
 
 .basket-link {
   padding-top: 8px;
-  padding-bottom: 8px;
+  padding-bottom: 9px;
   padding-left: 44px;
   padding-right: 16px;
   line-height: 16px;
@@ -472,7 +472,7 @@ p.login-password-info {
 
 .login-link {
   padding-top: 8px;
-  padding-bottom: 8px;
+  padding-bottom: 9px;
   padding-left: 16px;
   padding-right: 16px;
 }
@@ -608,7 +608,7 @@ p.login-password-info {
 
 .basket-wrapper {
   position: relative;
-  padding-bottom: 10px;
+  padding-bottom: 14px;
   padding-top: 10px;
 }
 
