@@ -110,15 +110,17 @@
                   <label class="visually-hidden" for="user-password">Пароль</label>
                   <input class="login-password" id="user-password" type="password" name="password" placeholder="Пароль">
                 </p>
-                <button class="button login-button" type="submit">Войти</button>
-                <p class="login-password-info">
-                  <a href=#>Забыли пароль?</a>
-                  <a class="new-registration" href=#>Новая регистрация</a>
-                </p>
+                <div class="button-info-wrapper">
+                  <button class="button login-button" type="submit">Войти</button>
+                  <p class="login-password-info">
+                    <a href=#>Забыли пароль?</a>
+                    <a class="new-registration" href=#>Новая регистрация</a>
+                  </p>
+                </div>
               </form>
             </li>
           </ul>
-          <a class="basket-link no-products" href=# aria-label="Корзина">
+          <a class="basket-link" href=# aria-label="Корзина">
             Пусто
           </a>
         </div>
@@ -294,9 +296,10 @@
           <a class="button button-feedback" href="write.html">Форма обратной связи</a>
         </div>
       </div>
-      <iframe
+      <ifram
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002674!2d30.32085871545382!3d59.93871916905496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1560255577245!5m2!1sru!2sru"
-        allowfullscreen></iframe>
+        allowfullscreen>
+      </ifram>
     </section>
 
   </main>
@@ -455,7 +458,9 @@
       <label class="visually-hidden" for="comment-field">Комментарий</label>
       <textarea rows="6" name="comment" id="comment-field">"Напишите что-нибудь..."</textarea>
     </p>
-    <button class="button" type="submit">Отправить</button>
+    <div class="wrapper-button">
+      <button class="button" type="submit">Отправить</button>
+    </div>
     <button class="modal-close" type="button">Закрыть</button>
   </form>
 </section>
