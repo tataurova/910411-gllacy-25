@@ -315,6 +315,8 @@ site-wrapper::after {
 
 .search {
   position: relative;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 
 .site-search {
@@ -348,7 +350,7 @@ site-wrapper::after {
   background-color: #F8F7F4;
   position: absolute;
   box-sizing: border-box;
-  top: 36px;
+  top: 46px;
   right: 0px;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.40);
   display: none;
