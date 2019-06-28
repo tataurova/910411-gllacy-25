@@ -1192,7 +1192,6 @@ select::-ms-expand {
 .filter-input-checkbox + label:focus::after,
 .filter-input-checkbox:checked + label:focus::after {
   opacity: 1.0;
-  background: red;
 }
 
 .catalog-list {
