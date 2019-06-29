@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Gllacy Shop</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -88,11 +88,13 @@
                 <label class="visually-hidden" for="user-password">Пароль</label>
                 <input class="login-password" id="user-password" type="password" name="password" placeholder="Пароль">
               </p>
-              <button class="button login-button" type="submit">Войти</button>
-              <p class="login-password-info">
-                <a class="restore-password" href=#>Забыли пароль?</a>
-                <a class="new-registration" href=#>Новая регистрация</a>
-              </p>
+              <div class="button-info-wrapper">
+                  <button class="button login-button" type="submit">Войти</button>
+                  <p class="login-password-info">
+                    <a href=#>Забыли пароль?</a>
+                    <a class="new-registration" href=#>Новая регистрация</a>
+                  </p>
+                </div>
             </form>
           </li>
         </ul>
@@ -393,7 +395,7 @@
 
 </main>
 <footer class="main-footer">
-  <div class="container">
+  <div class="container catalog-container">
     <div class="footer-social">
       <ul>
         <li>
@@ -512,10 +514,10 @@
           <a href=#>Для поставщиков</a>
         </li>
         <li>
-          <a href=#>Наши документы </a>
+          <a href=#>Наши документы</a>
         </li>
         <li>
-          <a href="#">О производстве </a>
+          <a href="#">О производстве</a>
         </li>
         <li>
           <a href=#>Экологические стандарты</a>
