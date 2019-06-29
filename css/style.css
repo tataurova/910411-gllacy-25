@@ -72,6 +72,10 @@ input[type="radio"].visually-hidden {
   line-height: 18px;
 }
 
+.inner-page nav {
+  margin-bottom: 2px;
+}
+
 .main-navigation-wrapper {
   display: flex;
   justify-content: space-between;
@@ -81,7 +85,7 @@ input[type="radio"].visually-hidden {
 }
 
 .inner-page .main-navigation-wrapper {
-  min-height: 75px;
+  min-height: 82px;
 }
 
 .main-navigation-container {
@@ -151,7 +155,7 @@ site-wrapper::after {
 .slide-title {
   width: 700px;
   margin: 0 auto;
-  margin-bottom: 29px;
+  margin-bottom: 28px;
   font-size: 60px;
   line-height: 60px;
   font-weight: 700;
@@ -161,7 +165,7 @@ site-wrapper::after {
   font-size: 32px;
   line-height: 44px;
   margin: 0 auto;
-  margin-bottom: 38px;
+  margin-bottom: 41px;
   padding-left: 40px;
   padding-right: 40px;
   padding-bottom: 11px;
@@ -169,7 +173,7 @@ site-wrapper::after {
 
 .slider-controls {
   position: absolute;
-  bottom: 60px;
+  bottom: 62px;
   left: 0;
   z-index: 1;
   font-size: 0;
@@ -238,7 +242,6 @@ site-wrapper::after {
   border-radius: 30px;
   border: none;
   padding-top: 7px;
-  padding-bottom: 7px;
   padding-left: 13px;
   padding-right: 13px;
   margin: 0;
@@ -288,7 +291,7 @@ site-wrapper::after {
 }
 
 .contact-wrapper {
-  margin-top: -18px;
+  margin-top: -20px;
   display: flex;
   flex-direction: column;
   width: 180px;
@@ -302,6 +305,7 @@ site-wrapper::after {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 5px;
 }
 
 .inner-page .site-tools {
@@ -468,7 +472,7 @@ p.login-password-info {
   padding-top: 8px;
   padding-bottom: 9px;
   padding-left: 44px;
-  padding-right: 16px;
+  padding-right: 18px;
   line-height: 16px;
 }
 
@@ -481,8 +485,7 @@ p.login-password-info {
 
 .login-link svg {
   vertical-align: middle;
-  margin-right: 4px;
-  margin-bottom: 4px;
+  margin-right: 2px;
 }
 
 .login-link:hover,
@@ -730,7 +733,6 @@ p.login-password-info {
   line-height: 41px;
   margin: 0;
   margin-bottom: 47px;
-  margin-top: 4px;
 }
 
 .catalog-item-title {
@@ -752,9 +754,9 @@ p.login-password-info {
   width: 560px;
   font-size: 18px;
   box-sizing: border-box;
-  padding-right: 21px;
+  padding-right: 22px;
   padding-bottom: 24px;
-  padding-top: 28px;
+  padding-top: 26px;
   padding-left: 19px;
   list-style: none;
   text-align: left;
@@ -771,13 +773,13 @@ p.login-password-info {
 .advertisement-two h2 {
   font-size: 35px;
   margin: 0;
-  margin-bottom: 23px;
+  margin-bottom: 24px;
 }
 
 .advertisement-one p,
 .advertisement-two p {
   margin: 0;
-  margin-bottom: 46px;
+  margin-bottom: 45px;
 
 }
 
@@ -785,6 +787,7 @@ p.login-password-info {
 .advertisement-two .button {
   margin: 0;
   align-self: flex-end;
+  font-weight: 700;
 }
 
 .advertisement-two {
@@ -883,7 +886,7 @@ p.login-password-info {
   display: flex;
   justify-content: space-between;
   padding: 0;
-  margin-bottom: 36px;
+  margin-bottom: 34px;
 }
 
 .features-list,
@@ -901,7 +904,7 @@ p.login-password-info {
   font-size: 14px;
   line-height: 16px;
   position: absolute;
-  top: 94px;
+  top: 98px;
 }
 
 .breadcrumbs li {
@@ -1206,7 +1209,7 @@ select::-ms-expand {
 }
 
 .inner-page .catalog-item {
-  margin-bottom: 34px;
+  margin-bottom: 32px;
 }
 
 .catalog-item {
@@ -1221,7 +1224,7 @@ select::-ms-expand {
 .catalog-item h3 {
   margin: 0 auto;
   padding: 0;
-  margin-top: 5px;
+  margin-top: 7px;
   width: 255px;
   z-index: 2;
   position: relative;
@@ -1273,7 +1276,7 @@ select::-ms-expand {
   font-weight: 400;
   padding: 0;
   margin: 0;
-  margin-bottom: 28px;
+  margin-bottom: 29px;
   margin-right: 23px;
   list-style: none;
   line-height: 18px;
@@ -1375,7 +1378,7 @@ select::-ms-expand {
 
 .catalog-item-price {
   position: absolute;
-  top: 220px;
+  top: 223px;
   left: -2px;
   z-index: 2;
   font-size: 45px;
