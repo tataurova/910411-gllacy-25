@@ -421,11 +421,6 @@ input[type="search"]::placeholder {
   width: 216px;
 }
 
-.login-form input[type="email"]::placeholder,
-.login-form input[type="password"]::placeholder {
-  padding-left:
-}
-
 input[type="search"]:hover,
 input[type="email"]:hover,
 input[type="password"]:hover {
