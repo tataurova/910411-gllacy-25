@@ -1,23 +1,23 @@
 var link = document.querySelector(".button-feedback");
 
-  var popup = document.querySelector(".modal-mailing");
-  var overlay = document.querySelector(".overlay");
-  var close = popup.querySelector(".modal-close");
+var popup = document.querySelector(".modal-mailing");
+var overlay = document.querySelector(".overlay");
+var close = popup.querySelector(".modal-close");
 
-  var form = popup.querySelector(".mailing-form");
-  var name = popup.querySelector("#mailing-name");
-  var email = popup.querySelector("[name=email]");
+var form = popup.querySelector(".mailing-form");
+var name = popup.querySelector("#mailing-name");
+var email = popup.querySelector("[name=email]");
 
-  var isStorageSupport = true;
-  var storage = "";
+var isStorageSupport = true;
+var storage = "";
 
-  try {
+try {
     storage = localStorage.getItem("name");
-  } catch (err) {
+} catch (err) {
     isStorageSupport = false;
-  }
+}
 
-  link.addEventListener("click", function (evt) {
+link.addEventListener("click", function (evt) {
     evt.preventDefault();
     popup.classList.add("modal-show");
     overlay.classList.toggle("overlay-none");
@@ -25,42 +25,42 @@ var link = document.querySelector(".button-feedback");
     nameTemp = popup.querySelector("#mailing-name");
 
     if (storage) {
-      name.value = storage;
-      email.focus();
+        name.value = storage;
+        email.focus();
     } else {
-      nameTemp.focus();
+        nameTemp.focus();
     }
-  });
+});
 
-  close.addEventListener("click", function (evt) {
+close.addEventListener("click", function (evt) {
     evt.preventDefault();
     popup.classList.remove("modal-show");
     overlay.classList.remove("overlay-show");
     overlay.classList.remove("overlay-show");
     overlay.classList.add("overlay-none");
     popup.classList.remove("modal-error");
-  });
+});
 
-  form.addEventListener("submit", function (evt) {
+form.addEventListener("submit", function (evt) {
     if (!name.value || !email.value) {
-      evt.preventDefault();
-      popup.classList.remove("modal-error");
-      popup.offsetWidth = popup.offsetWidth;
-      popup.classList.add("modal-error");
-    } else {
-      if (isStorageSupport) {
-        localStorage.setItem("name", name.value);
-      }
-    }
-  });
-
-  window.addEventListener("keydown", function (evt) {
-    if (evt.keyCode === 27) {
-      evt.preventDefault();
-      if (popup.classList.contains("modal-show")) {
-        popup.classList.remove("modal-show");
-        overlay.classList.remove("overlay-show");
+        evt.preventDefault();
         popup.classList.remove("modal-error");
-      }
+        popup.offsetWidth = popup.offsetWidth;
+        popup.classList.add("modal-error");
+    } else {
+        if (isStorageSupport) {
+            localStorage.setItem("name", name.value);
+        }
     }
-  });
+});
+
+window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+        evt.preventDefault();
+        if (popup.classList.contains("modal-show")) {
+            popup.classList.remove("modal-show");
+            overlay.classList.remove("overlay-show");
+            popup.classList.remove("modal-error");
+        }
+    }
+});
