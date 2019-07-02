@@ -21,6 +21,7 @@ a {
     font-size: 18px;
     font-weight: bold;
     display: inline-block;
+    vertical-align: middle;
     margin: 10px;
     padding-top: 10px;
     padding-right: 22px;
@@ -29,7 +30,6 @@ a {
     cursor: pointer;
     text-align: center;
     color: #fefefe;
-    border: none;
     border: none;
     border-radius: 30px;
     border-radius: 50px;
@@ -130,7 +130,7 @@ main .container {
     background-image: url('../img/slider-item2.png');
 }
 
-site-wrapper::after {
+.site-wrapper::after {
     background-image: url('../img/slider-item3.png');
 }
 
@@ -524,7 +524,6 @@ input[type='password']:focus {
 
 p.login-password-info {
     display: flex;
-    display: block;
     flex-direction: column;
     margin: 0;
     margin-top: -3px;
@@ -673,7 +672,6 @@ p.login-password-info {
     z-index: 2;
     top: 40px;
     right: 0;
-    display: flex;
     display: none;
     flex-direction: column;
     box-sizing: border-box;
@@ -882,8 +880,13 @@ p.login-password-info {
     align-self: flex-end;
 }
 
+.advertisement-one {
+  background-color: #760321;
+}
+
 .advertisement-two {
     background-image: url('../img/chocolate-background.jpg');
+    background-color: #5D331A;
 }
 
 .features {
@@ -1044,29 +1047,6 @@ p.login-password-info {
 
 .range-controls .toggle-max {
     left: 117px;
-}
-
-.price-controls {
-    font-size: 0;
-}
-
-.price-controls label {
-    font-size: 16px;
-    display: inline-block;
-    width: 50%;
-    text-transform: uppercase;
-}
-
-.price-controls input {
-    font-size: 16px;
-    width: 60px;
-    margin-left: 10px;
-    padding: 8px 10px;
-    text-align: center;
-    color: #283136;
-    border: none;
-    border-radius: 5px;
-    background: #f1f1f1;
 }
 
 .max-price {
@@ -1583,7 +1563,6 @@ select::-ms-expand {
     box-sizing: border-box;
     width: 560px;
     padding: 6px;
-    padding-bottom: 0;
     color: #5a5a5a;
     border-radius: 10px;
     background: url('../img/mail-background.png');
@@ -1821,6 +1800,7 @@ input,
     height: 430px;
     margin-bottom: 6px;
     background-image: url('../img/map.jpg');
+    background-color: #F2F3F4;
     background-repeat: no-repeat;
     background-position: center;
 }
