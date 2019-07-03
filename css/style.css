@@ -1980,18 +1980,7 @@ p.login-password-info {
     font-weight: 400;
     color: #999;
 }
-/*
-.search-form input[type="search"]::-ms-input-placeholder,
-.login-form input[type='email']::-ms-input-placeholder,
-.login-form input[type='password']::-ms-input-placeholder,
-.mailing input[type='email']::-ms-input-placeholder,
-.mailing-form input[type='text']::-ms-input-placeholder,
-.mailing-form input[type='email']::-ms-input-placeholder,
-.mailing-form textarea::-ms-input-placeholder {
-    font-weight: 400;
-    color: #999;
-}
-*/
+
 .search-form input[type="search"]::placeholder,
 .login-form input[type='email']::placeholder,
 .login-form input[type='password']::placeholder,
