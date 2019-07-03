@@ -540,6 +540,7 @@ main .container {
 
 .search-form input[type='search']:hover,
 .search-form input[type='search']:focus {
+  height: 42px;
   padding-right: 8px;
   padding-left: 12px;
 }
