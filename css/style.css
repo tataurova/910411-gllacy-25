@@ -1933,6 +1933,7 @@ input::-webkit-input-placeholder,
 .mailing-form input[type='email']::-webkit-input-placeholder,
 .mailing-form textarea::-webkit-input-placeholder {
     font-weight: 400;
+    color: #999;
 }
 
 input:-ms-input-placeholder,
@@ -1941,6 +1942,7 @@ input:-ms-input-placeholder,
 .mailing-form input[type='email']:-ms-input-placeholder,
 .mailing-form textarea:-ms-input-placeholder {
     font-weight: 400;
+    color: #999;
 }
 
 input::-ms-input-placeholder,
@@ -1949,6 +1951,7 @@ input::-ms-input-placeholder,
 .mailing-form input[type='email']::-ms-input-placeholder,
 .mailing-form textarea::-ms-input-placeholder {
     font-weight: 400;
+    color: #999;
 }
 
 input::placeholder,
@@ -1957,6 +1960,7 @@ input::placeholder,
 .mailing-form input[type='email']::placeholder,
 .mailing-form textarea::placeholder {
     font-weight: 400;
+    color: #999;
 }
 
 input,
