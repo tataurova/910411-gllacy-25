@@ -425,7 +425,8 @@ main .container {
     line-height: 24px;
     width: 305px;
     margin: 0;
-    padding: 9px;
+    height: 44px;
+    padding-right: 9px;
     padding-left: 13px;
     border: 1px solid #d3d3d2;
     border-radius: 5px;
@@ -488,46 +489,65 @@ main .container {
     font-size: 14px;
     line-height: 24px;
     width: 216px;
-    padding-top: 9px;
-    padding-right: 10px;
-    padding-bottom: 9px;
-    padding-left: 12px;
     border: 1px solid #d3d3d2;
     border-radius: 5px;
 }
 
-.search-form input[type='search']:hover,
-.search-form input[type='email']:hover,
-.mailing input[type='email']:hover,
-.login-form input[type='password']:hover {
-    border: 2px solid #9a9a9a;
-    border-radius: 5px;
+.login-form input[type='email'],
+.login-form input[type='password'] {
+    height: 44px;
+    padding-left: 13px;
+    padding-right: 9px;
 }
 
-.search-form input[type='email']:hover,
-.mailing input[type='email']:hover,
+.mailing-form textarea {
+    padding-top: 9px;
+    padding-right: 10px;
+    padding-bottom: 9px;
+    padding-left: 12px;
+}
+
+.search-form input[type='search']:hover,
+.login-form input[type='email']:hover,
 .login-form input[type='password']:hover,
-.search-form input[type='email']:focus,
-.mailing input[type='email']:focus,
+.mailing input[type='email']:hover {
+    border: 2px solid #9a9a9a;
+    border-radius: 5px;
+    outline: none;
+}
+
+.login-form input[type='email']:hover,
+.login-form input[type='password']:hover,
+.login-form input[type='email']:focus,
 .login-form input[type='password']:focus {
+    height: 42px;
+    padding-left: 12px;
+    padding-right: 8px;
+}
+
+.mailing input[type='email']:hover,
+.mailing input[type='email']:focus {
     padding-top: 8px;
     padding-right: 9px;
     padding-bottom: 8px;
     padding-left: 11px;
 }
 
-.search-form input[type='search']:hover,
-.search-form input[type='email']:hover,
-.mailing input[type='email']:hover,
-.search-form input[type='search']:focus {
+.mailing input[type='email']:hover {
     padding: 8px;
     padding-left: 12px;
 }
 
+.search-form input[type='search']:hover,
+.search-form input[type='search']:focus {
+  padding-right: 8px;
+  padding-left: 12px;
+}
+
 .search-form input[type='search']:focus,
-.search-form input[type='email']:focus,
-.mailing input[type='email']:focus,
-.login-form input[type='password']:focus {
+.login-form input[type='email']:focus,
+.login-form input[type='password']:focus,
+.mailing input[type='email']:focus {
     border: 2px solid #92c1f1;
     border-radius: 5px;
     outline: none;
